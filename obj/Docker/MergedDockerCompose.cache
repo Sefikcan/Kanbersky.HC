@@ -1,0 +1,51 @@
+services:
+  basketdb:
+    container_name: basketdb
+    image: redis:alpine
+    ports:
+    - published: 6379
+      target: 6379
+    restart: always
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      discovery.type: single-node
+      xpack.monitoring.enabled: "true"
+      xpack.watcher.enabled: "false"
+    image: docker.elasticsearch.co/elasticsearch/elasticsearch:7.13.1
+    ports:
+    - published: 9200
+      target: 9200
+    volumes:
+    - elasticsearch-data:/usr/share/elasticsearch/data:rw
+  kanbersky.hc.basket.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC
+      dockerfile: src/Services/Basket/Kanbersky.HC.Basket.Api/Dockerfile
+    container_name: kanbersky.hc.basket.api
+    depends_on:
+      basketdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      CacheSettings:ConnectionString: basketdb:6379
+      ElasticsearchSettings:Url: http://elasticsearch
+    image: kanberskyhcbasketapi
+    ports:
+    - published: 8001
+      target: 80
+  kibana:
+    container_name: kibana
+    depends_on:
+      elasticsearch:
+        condition: service_started
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch
+    image: docker.elastic.co/kibana/kibana:7.13.1
+    ports:
+    - published: 5601
+      target: 5601
+version: '3.4'
+volumes:
+  elasticsearch-data: {}

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kanbersky.HC.Basket.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Kanbersky.HC.Basket.Api.Controllers.BasketsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Basket.Api.Controllers.BasketsController.#ctor(MediatR.IMediator)">
+            <summary>
+            ctor
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Basket.Api.Controllers.BasketsController.GetBasketByUserName(System.String)">
+            <summary>
+            Get Basket Info By UserName
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Basket.Api.Controllers.BasketsController.AddBasket(Kanbersky.HC.Basket.Services.DTO.Request.CreateShoppingCartRequestModel)">
+            <summary>
+            Add Basket
+            </summary>
+            <param name="createShoppingCartRequestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Kanbersky.HC.Basket.Api.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Basket.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Kanbersky.HC.Basket.Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Basket.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Basket.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="apiVersionDescriptionProvider"></param>
+        </member>
+    </members>
+</doc>

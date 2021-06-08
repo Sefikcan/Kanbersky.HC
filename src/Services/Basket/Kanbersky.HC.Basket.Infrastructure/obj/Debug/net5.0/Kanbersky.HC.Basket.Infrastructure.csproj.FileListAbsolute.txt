@@ -1,0 +1,11 @@
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\bin\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.deps.json
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\bin\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\bin\Debug\net5.0\ref\Kanbersky.HC.Basket.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\bin\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.AssemblyInfoInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.AssemblyInfo.cs
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.csproj.CoreCompileInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\ref\Kanbersky.HC.Basket.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.pdb

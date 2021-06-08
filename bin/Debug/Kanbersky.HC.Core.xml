@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kanbersky.HC.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Kanbersky.HC.Core.Extensions.HCCoreExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HCCoreExtensions.RegisterCoreLayer(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HCCoreExtensions.UseCoreLayer(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="apiVersionDescriptionProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Kanbersky.HC.Core.Mappings.Concrete.AutoMapper.AutoMapping">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Mappings.Concrete.AutoMapper.AutoMapping.Map``2(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <typeparam name="TDestination"></typeparam>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
