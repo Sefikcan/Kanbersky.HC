@@ -7,6 +7,14 @@ services:
     ports:
         - "6379:6379" 
 
+  catalogdb:
+    container_name: catalogdb
+    restart: always
+    ports:
+        - "27017:27017"
+    volumes:
+        - mongo_data:/data/db 
+
   elasticsearch:
     container_name: elasticsearch
     environment:
@@ -32,9 +40,20 @@ services:
     container_name: kanbersky.hc.basket.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "CacheSettings:ConnectionString=basketdb:6379"
+      - "MongoDBSettings:ConnectionStrings=mongodb://catalogdb:27017"
       - "ElasticsearchSettings:Url=http://elasticsearch"
     ports:
       - "8001:80"
     depends_on:
       - basketdb
+      
+  kanbersky.hc.catalog.api:
+    container_name: kanbersky.hc.catalog.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "CacheSettings:ConnectionString=basketdb:6379"
+      - "ElasticsearchSettings:Url=http://elasticsearch"
+    ports:
+      - "8002:80"
+    depends_on:
+      - catalogdb

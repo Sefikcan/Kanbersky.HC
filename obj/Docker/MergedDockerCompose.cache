@@ -13,7 +13,7 @@ services:
       discovery.type: single-node
       xpack.monitoring.enabled: "true"
       xpack.watcher.enabled: "false"
-    image: docker.elasticsearch.co/elasticsearch/elasticsearch:7.13.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.13.1
     ports:
     - published: 9200
       target: 9200

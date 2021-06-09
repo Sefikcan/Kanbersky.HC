@@ -4,6 +4,9 @@ services:
   basketdb:
     image: redis:alpine
 
+  catalogdb:
+    image: mongo
+
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.13.1
 
@@ -15,6 +18,12 @@ services:
     build:
       context: .
       dockerfile: src/Services/Basket/Kanbersky.HC.Basket.Api/Dockerfile
+
+  kanbersky.hc.catalog.api:
+    image: ${DOCKER_REGISTRY-}kanberskyhccatalogapi
+    build:
+      context: .
+      dockerfile: src/Services/Catalog/Kanbersky.HC.Catalog.Api/Dockerfile
 
 volumes:
     elasticsearch-data:

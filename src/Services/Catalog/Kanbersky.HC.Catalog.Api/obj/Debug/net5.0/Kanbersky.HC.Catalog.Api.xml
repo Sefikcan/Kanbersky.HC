@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kanbersky.HC.Catalog.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Kanbersky.HC.Catalog.Api.Controllers.CatalogsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Catalog.Api.Controllers.CatalogsController.#ctor(MediatR.IMediator)">
+            <summary>
+            ctor
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Catalog.Api.Controllers.CatalogsController.GetAllProducts">
+            <summary>
+            Get All Products
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Catalog.Api.Controllers.CatalogsController.AddProduct(Kanbersky.HC.Catalog.Services.DTO.Request.v1.CreateCatalogRequestModel)">
+            <summary>
+            Add Product
+            </summary>
+            <param name="createCatalogRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Kanbersky.HC.Catalog.Api.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Catalog.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            ctor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Catalog.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Catalog.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="apiVersionDescriptionProvider"></param>
+        </member>
+    </members>
+</doc>

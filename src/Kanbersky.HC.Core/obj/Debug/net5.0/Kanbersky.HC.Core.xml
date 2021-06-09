@@ -212,25 +212,6 @@
             
             </summary>
         </member>
-        <member name="T:Kanbersky.HC.Core.Logging.LoggingDelegatingHandler">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Kanbersky.HC.Core.Logging.LoggingDelegatingHandler.#ctor(Microsoft.Extensions.Logging.ILogger{Kanbersky.HC.Core.Logging.LoggingDelegatingHandler})">
-            <summary>
-            ctor
-            </summary>
-            <param name="logger"></param>
-        </member>
-        <member name="M:Kanbersky.HC.Core.Logging.LoggingDelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
-            <summary>
-            
-            </summary>
-            <param name="request"></param>
-            <param name="cancellationToken"></param>
-            <returns></returns>
-        </member>
         <member name="T:Kanbersky.HC.Core.Logging.Models.LoggerModel">
             <summary>
             

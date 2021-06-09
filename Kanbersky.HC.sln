@@ -25,6 +25,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanbersky.HC.Basket.Infrast
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{80445563-4067-4FA1-B02A-95B7768634DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanbersky.HC.Catalog.Services", "src\Services\Catalog\Kanbersky.HC.Catalog.Services\Kanbersky.HC.Catalog.Services.csproj", "{AC952CBD-67C0-48E7-B1A5-4F51C8845D52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanbersky.HC.Catalog.Infrastructure", "src\Services\Catalog\Kanbersky.HC.Catalog.Infrastructure\Kanbersky.HC.Catalog.Infrastructure.csproj", "{3E07D6A1-4620-4D60-BF84-B34D7C5E358B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,14 @@ Global
 		{80445563-4067-4FA1-B02A-95B7768634DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80445563-4067-4FA1-B02A-95B7768634DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80445563-4067-4FA1-B02A-95B7768634DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC952CBD-67C0-48E7-B1A5-4F51C8845D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC952CBD-67C0-48E7-B1A5-4F51C8845D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC952CBD-67C0-48E7-B1A5-4F51C8845D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC952CBD-67C0-48E7-B1A5-4F51C8845D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E07D6A1-4620-4D60-BF84-B34D7C5E358B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E07D6A1-4620-4D60-BF84-B34D7C5E358B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E07D6A1-4620-4D60-BF84-B34D7C5E358B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E07D6A1-4620-4D60-BF84-B34D7C5E358B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +81,8 @@ Global
 		{48E20E98-F9DA-4B2B-9C0A-2A50810D0061} = {B27C29DB-74F4-4FDB-9C13-B3B1867F4808}
 		{83D438AC-CED1-4A9D-B4CB-85427C0075FC} = {7007DD3E-AA46-49A7-8D41-B783FCF70714}
 		{A82862A5-5537-4EAC-B8CC-7DADA48DA752} = {7007DD3E-AA46-49A7-8D41-B783FCF70714}
+		{AC952CBD-67C0-48E7-B1A5-4F51C8845D52} = {B1133DD5-7524-44F4-AA5A-78904520FEFE}
+		{3E07D6A1-4620-4D60-BF84-B34D7C5E358B} = {B1133DD5-7524-44F4-AA5A-78904520FEFE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF42A079-0C5C-4506-B59F-145E82B5026F}
