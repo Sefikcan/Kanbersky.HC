@@ -27,3 +27,4 @@ services:
 
 volumes:
     elasticsearch-data:
+    mongo_data:

@@ -40,7 +40,7 @@ services:
     container_name: kanbersky.hc.basket.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "MongoDBSettings:ConnectionStrings=mongodb://catalogdb:27017"
+      - "CacheSettings:ConnectionString=basketdb:6379"
       - "ElasticsearchSettings:Url=http://elasticsearch"
     ports:
       - "8001:80"
@@ -51,7 +51,7 @@ services:
     container_name: kanbersky.hc.catalog.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "CacheSettings:ConnectionString=basketdb:6379"
+      - "MongoDBSettings:ConnectionStrings=mongodb://catalogdb:27017"
       - "ElasticsearchSettings:Url=http://elasticsearch"
     ports:
       - "8002:80"
