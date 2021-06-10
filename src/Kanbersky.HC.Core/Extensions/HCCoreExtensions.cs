@@ -3,6 +3,7 @@ using Kanbersky.HC.Core.Caching.Abstract;
 using Kanbersky.HC.Core.Caching.Concrete.Redis;
 using Kanbersky.HC.Core.Mappings.Abstract;
 using Kanbersky.HC.Core.Mappings.Concrete.Mapster;
+using Kanbersky.HC.Core.Middlewares;
 using Kanbersky.HC.Core.Settings.Concrete.Caching;
 using Kanbersky.HC.Core.Settings.Concrete.Swagger;
 using Microsoft.AspNetCore.Builder;
@@ -116,6 +117,8 @@ namespace Kanbersky.HC.Core.Extensions
                     }
                 });
             }
+
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
 

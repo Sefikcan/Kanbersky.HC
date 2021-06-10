@@ -62,7 +62,7 @@ namespace Kanbersky.HC.Core.Middlewares
             }
         }
 
-        private static async Task ThrowError(HttpContext context, Exception ex, string contentType = "", int statusCode = StatusCodes.Status500InternalServerError)
+        private static async Task ThrowError(HttpContext context, Exception ex, string contentType = "application/json", int statusCode = StatusCodes.Status500InternalServerError)
         {
             var logModel = new LoggerModel
             {

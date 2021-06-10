@@ -36,7 +36,7 @@ namespace Kanbersky.HC.Basket.Api.Controllers
         [HttpGet("{userName}")]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(typeof(ShoppingCartResponseModel), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<ShoppingCartResponseModel>> GetBasketByUserName(string userName)
+        public async Task<ActionResult<ShoppingCartResponseModel>> GetBasketByUserName([FromRoute] string userName)
         {
             var response = await _mediator.Send(new GetBasketByUserNameQuery(userName));
             return ApiOk(response);

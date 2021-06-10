@@ -33,11 +33,11 @@ namespace Kanbersky.HC.Ordering.Api.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet()]
+        [HttpGet("{id}")]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(typeof(OrderResponseModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public async Task<ActionResult<OrderResponseModel>> GetOrderById(int id)
+        public async Task<ActionResult<OrderResponseModel>> GetOrderById([FromRoute] int id)
         {
             var response = await _mediator.Send(new GetOrderByIdQuery(id));
             return ApiOk(response);
