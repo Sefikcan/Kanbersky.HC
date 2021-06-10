@@ -28,6 +28,24 @@
             <param name="createCatalogRequest"></param>
             <returns></returns>
         </member>
+        <member name="T:Kanbersky.HC.Catalog.Api.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Catalog.Api.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Catalog.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
         <member name="T:Kanbersky.HC.Catalog.Api.Startup">
             <summary>
             
@@ -38,6 +56,11 @@
             ctor
             </summary>
             <param name="configuration"></param>
+        </member>
+        <member name="P:Kanbersky.HC.Catalog.Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
         </member>
         <member name="M:Kanbersky.HC.Catalog.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>

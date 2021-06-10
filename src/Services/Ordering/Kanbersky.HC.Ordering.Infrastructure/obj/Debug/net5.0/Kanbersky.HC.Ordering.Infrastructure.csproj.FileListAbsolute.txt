@@ -1,0 +1,16 @@
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\bin\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.deps.json
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\bin\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\bin\Debug\net5.0\ref\Kanbersky.HC.Ordering.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\bin\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\bin\Debug\net5.0\Kanbersky.HC.Core.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\bin\Debug\net5.0\Kanbersky.HC.Core.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\bin\Debug\net5.0\Kanbersky.HC.Core.xml
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.csprojAssemblyReference.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.AssemblyInfoInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.AssemblyInfo.cs
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.csproj.CoreCompileInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.csproj.CopyComplete
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\obj\Debug\net5.0\ref\Kanbersky.HC.Ordering.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Ordering.Infrastructure.pdb

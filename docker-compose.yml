@@ -7,6 +7,9 @@ services:
   catalogdb:
     image: mongo
 
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.13.1
 
@@ -24,6 +27,12 @@ services:
     build:
       context: .
       dockerfile: src/Services/Catalog/Kanbersky.HC.Catalog.Api/Dockerfile
+
+  kanbersky.hc.ordering.api:
+    image: ${DOCKER_REGISTRY-}kanberskyhcorderingapi
+    build:
+      context: .
+      dockerfile: src/Services/Ordering/Kanbersky.HC.Ordering.Api/Dockerfile
 
 volumes:
     elasticsearch-data:

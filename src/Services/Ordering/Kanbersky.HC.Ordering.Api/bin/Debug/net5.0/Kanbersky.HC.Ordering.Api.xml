@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kanbersky.HC.Ordering.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Kanbersky.HC.Ordering.Api.Controllers.OrdersController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Ordering.Api.Controllers.OrdersController.#ctor(MediatR.IMediator)">
+            <summary>
+            ctor
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Ordering.Api.Controllers.OrdersController.GetOrderById(System.Int32)">
+            <summary>
+             Get Order By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Ordering.Api.Controllers.OrdersController.AddOrder(Kanbersky.HC.Ordering.Services.DTO.Request.v1.CreateOrderRequestModel)">
+            <summary>
+            Add Order
+            </summary>
+            <param name="createOrderRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Kanbersky.HC.Ordering.Api.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Ordering.Api.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Ordering.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Kanbersky.HC.Ordering.Api.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Ordering.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            ctor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Kanbersky.HC.Ordering.Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Ordering.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Ordering.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="apiVersionDescriptionProvider"></param>
+        </member>
+    </members>
+</doc>

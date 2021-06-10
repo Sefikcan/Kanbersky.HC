@@ -180,6 +180,31 @@
             
             </summary>
         </member>
+        <member name="T:Kanbersky.HC.Core.Enums.OrderStatus">
+            <summary>
+            OrderStatus
+            </summary>
+        </member>
+        <member name="F:Kanbersky.HC.Core.Enums.OrderStatus.Pending">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Kanbersky.HC.Core.Enums.OrderStatus.Shipped">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Kanbersky.HC.Core.Enums.OrderStatus.Failed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Kanbersky.HC.Core.Enums.OrderStatus.Success">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Kanbersky.HC.Core.Extensions.HCCoreExtensions">
             <summary>
             
@@ -612,6 +637,16 @@
             </summary>
         </member>
         <member name="P:Kanbersky.HC.Core.Settings.Concrete.Caching.CacheSettings.ConnectionString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Kanbersky.HC.Core.Settings.Concrete.Databases.OrderDbSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Settings.Concrete.Databases.OrderDbSettings.ConnectionStrings">
             <summary>
             
             </summary>

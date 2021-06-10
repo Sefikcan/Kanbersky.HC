@@ -180,6 +180,31 @@
             
             </summary>
         </member>
+        <member name="T:Kanbersky.HC.Core.Enums.OrderStatus">
+            <summary>
+            OrderStatus
+            </summary>
+        </member>
+        <member name="F:Kanbersky.HC.Core.Enums.OrderStatus.Pending">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Kanbersky.HC.Core.Enums.OrderStatus.Shipped">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Kanbersky.HC.Core.Enums.OrderStatus.Failed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Kanbersky.HC.Core.Enums.OrderStatus.Success">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Kanbersky.HC.Core.Extensions.HCCoreExtensions">
             <summary>
             
@@ -211,25 +236,6 @@
             <summary>
             
             </summary>
-        </member>
-        <member name="T:Kanbersky.HC.Core.Logging.LoggingDelegatingHandler">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Kanbersky.HC.Core.Logging.LoggingDelegatingHandler.#ctor(Microsoft.Extensions.Logging.ILogger{Kanbersky.HC.Core.Logging.LoggingDelegatingHandler})">
-            <summary>
-            ctor
-            </summary>
-            <param name="logger"></param>
-        </member>
-        <member name="M:Kanbersky.HC.Core.Logging.LoggingDelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
-            <summary>
-            
-            </summary>
-            <param name="request"></param>
-            <param name="cancellationToken"></param>
-            <returns></returns>
         </member>
         <member name="T:Kanbersky.HC.Core.Logging.Models.LoggerModel">
             <summary>
@@ -631,6 +637,16 @@
             </summary>
         </member>
         <member name="P:Kanbersky.HC.Core.Settings.Concrete.Caching.CacheSettings.ConnectionString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Kanbersky.HC.Core.Settings.Concrete.Databases.OrderDbSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Settings.Concrete.Databases.OrderDbSettings.ConnectionStrings">
             <summary>
             
             </summary>

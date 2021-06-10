@@ -29,6 +29,24 @@
             <param name="createShoppingCartRequestModel"></param>
             <returns></returns>
         </member>
+        <member name="T:Kanbersky.HC.Basket.Api.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Basket.Api.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Kanbersky.HC.Basket.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
         <member name="T:Kanbersky.HC.Basket.Api.Startup">
             <summary>
             
