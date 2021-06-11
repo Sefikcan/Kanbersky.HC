@@ -15,6 +15,9 @@ services:
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.13.1
+  
+  portainer:
+    image: portainer/portainer-ce
 
   kanbersky.hc.basket.api:
     image: ${DOCKER_REGISTRY-}kanberskyhcbasketapi
@@ -37,3 +40,4 @@ services:
 volumes:
     elasticsearch-data:
     mongo_data:
+    portainer_data:

@@ -31,11 +31,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanbersky.HC.Catalog.Infras
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{24698F1C-E2E8-453B-A1AF-6F37926EB100}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanbersky.HC.Ordering.Api", "src\Services\Ordering\Kanbersky.HC.Ordering.Api\Kanbersky.HC.Ordering.Api.csproj", "{82D8C77F-D899-4CF9-AC3E-4159E37A06C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanbersky.HC.Ordering.Api", "src\Services\Ordering\Kanbersky.HC.Ordering.Api\Kanbersky.HC.Ordering.Api.csproj", "{82D8C77F-D899-4CF9-AC3E-4159E37A06C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanbersky.HC.Ordering.Infrastructure", "src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\Kanbersky.HC.Ordering.Infrastructure.csproj", "{A4F0E0CA-7369-40E7-8D4A-7FE7437C4526}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanbersky.HC.Ordering.Infrastructure", "src\Services\Ordering\Kanbersky.HC.Ordering.Infrastructure\Kanbersky.HC.Ordering.Infrastructure.csproj", "{A4F0E0CA-7369-40E7-8D4A-7FE7437C4526}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanbersky.HC.Ordering.Services", "src\Services\Ordering\Kanbersky.HC.Ordering.Services\Kanbersky.HC.Ordering.Services.csproj", "{DA27B5D5-98A5-4892-9F25-CE385131A1AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanbersky.HC.Ordering.Services", "src\Services\Ordering\Kanbersky.HC.Ordering.Services\Kanbersky.HC.Ordering.Services.csproj", "{DA27B5D5-98A5-4892-9F25-CE385131A1AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{ECD1D74A-3892-44B1-A921-DB569D17C5AE}"
+	ProjectSection(SolutionItems) = preProject
+		PortainerNotlar.txt = PortainerNotlar.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,19 @@
+* Portainer, Docker veya Docker Swarm Cluster’ýmýzý yönetmemizi saðlayan bir management UI’dýr.
+* Kýsaca docker komutlarýný terminalden yazarak ilerlemek yerine ui üzerinden yönetmektir.
+* Ekip bazýnda yetkilendirme yapabiliriz. Her ekip kendi ilgili container'ýný görebilir.
+* Ayrýca ilgili container'larýn iþlem loglarýný görebiliriz.
+* Örnek compose komutlarý
+version: '3.8'
+services:
+  portainer:
+    image: portainer/portainer-ce
+    restart: always
+    container_name: portainer
+    ports:
+      - "8000:8000"
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock   --> Portainer’ýn docker’ýmýza eriþebilmesi için bu tanýmlamayý yaptýk
+      - portainer_data:/data                        --> portainer datalarýný docker’da portainer_data volume içerisinde saklamasýný belirttik.
+volumes:
+  portainer_data:
