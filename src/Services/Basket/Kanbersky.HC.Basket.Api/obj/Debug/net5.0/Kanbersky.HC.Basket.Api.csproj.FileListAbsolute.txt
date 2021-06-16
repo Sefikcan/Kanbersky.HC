@@ -17,6 +17,7 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Mapster.Core.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\MediatR.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\System.Net.Http.Formatting.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
@@ -29,6 +30,7 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Pipelines.Sockets.Unofficial.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Serilog.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Serilog.AspNetCore.dll

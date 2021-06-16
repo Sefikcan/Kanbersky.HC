@@ -1,0 +1,16 @@
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\bin\Debug\net5.0\Kanbersky.HC.BFF.Services.deps.json
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\bin\Debug\net5.0\Kanbersky.HC.BFF.Services.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\bin\Debug\net5.0\ref\Kanbersky.HC.BFF.Services.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\bin\Debug\net5.0\Kanbersky.HC.BFF.Services.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\bin\Debug\net5.0\Kanbersky.HC.Core.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\bin\Debug\net5.0\Kanbersky.HC.Core.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\bin\Debug\net5.0\Kanbersky.HC.Core.xml
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\obj\Debug\net5.0\Kanbersky.HC.BFF.Services.csprojAssemblyReference.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\obj\Debug\net5.0\Kanbersky.HC.BFF.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\obj\Debug\net5.0\Kanbersky.HC.BFF.Services.AssemblyInfoInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\obj\Debug\net5.0\Kanbersky.HC.BFF.Services.AssemblyInfo.cs
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\obj\Debug\net5.0\Kanbersky.HC.BFF.Services.csproj.CoreCompileInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\obj\Debug\net5.0\Kanbersky.HC.BFF.Services.csproj.CopyComplete
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\obj\Debug\net5.0\Kanbersky.HC.BFF.Services.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\obj\Debug\net5.0\ref\Kanbersky.HC.BFF.Services.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Services\obj\Debug\net5.0\Kanbersky.HC.BFF.Services.pdb

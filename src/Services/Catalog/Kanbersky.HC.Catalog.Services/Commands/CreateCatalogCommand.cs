@@ -31,7 +31,7 @@ namespace Kanbersky.HC.Catalog.Services.Commands
             _mapper = mapper;
         }
 
-        public async Task<CatalogResponseModel> Handle(CreateCatalogCommand request, CancellationToken cancellationToken)
+        public async Task<CatalogResponseModel> Handle(CreateCatalogCommand request, CancellationToken cancellationToken = default)
         {
             var requestModel = _mapper.Map<CreateCatalogRequestModel, Product>(request.CreateCatalogRequest);
             await _repository.InsertAsync(requestModel);

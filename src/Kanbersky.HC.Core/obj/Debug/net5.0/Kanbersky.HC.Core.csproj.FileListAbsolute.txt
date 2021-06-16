@@ -11,4 +11,3 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\obj\Debu
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\obj\Debug\net5.0\ref\Kanbersky.HC.Core.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\obj\Debug\net5.0\Kanbersky.HC.Core.xml
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\obj\Debug\net5.0\Kanbersky.HC.Core.pdb
-D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\obj\Debug\net5.0\Kanbersky.HC.Core.csprojAssemblyReference.cache

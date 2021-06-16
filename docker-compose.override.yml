@@ -87,3 +87,18 @@ services:
       - "8003:80"
     depends_on:
       - orderdb
+
+  kanbersky.hc.bff.api:
+    container_name: kanbersky.hc.bff.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ApiSettings:CatalogUrl=http://kanbersky.hc.catalog.api"
+      - "ApiSettings:BasketUrl=http://kanbersky.hc.basket.api"
+      - "ApiSettings:OrderingUrl=http://kanbersky.hc.ordering.api"
+      - "ElasticsearchSettings:Url=http://elasticsearch"
+    depends_on:
+      - kanbersky.hc.basket.api
+      - kanbersky.hc.catalog.api
+      - kanbersky.hc.ordering.api
+    ports:
+      - "8048:80" 

@@ -3,7 +3,6 @@ using Kanbersky.HC.Catalog.Services.DTO.Response.v1;
 using Kanbersky.HC.Core.Mappings.Abstract;
 using Kanbersky.MongoDB.Abstract;
 using MediatR;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -31,7 +30,6 @@ namespace Kanbersky.HC.Catalog.Services.Queries
         {
             var response = await _repository.FindAllAsync();
             return _mapper.Map<List<Product>, List<CatalogResponseModel>>(response.ToList());
-            throw new NotImplementedException();
         }
     }
 }

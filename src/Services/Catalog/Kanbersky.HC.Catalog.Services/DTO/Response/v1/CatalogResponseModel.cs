@@ -1,7 +1,10 @@
-﻿namespace Kanbersky.HC.Catalog.Services.DTO.Response.v1
+﻿using Newtonsoft.Json;
+
+namespace Kanbersky.HC.Catalog.Services.DTO.Response.v1
 {
     public class CatalogResponseModel
     {
+        [JsonProperty("name")]
         public string Name { get; set; }
 
         public string Category { get; set; }

@@ -30,6 +30,20 @@ namespace Kanbersky.HC.Catalog.Api.Controllers
         }
 
         /// <summary>
+        /// Get Product Info By Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}")]
+        [MapToApiVersion("1.0")]
+        [ProducesResponseType(typeof(CatalogResponseModel), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<CatalogResponseModel>> GetProductById([FromRoute] string id)
+        {
+            var response = await _mediator.Send(new GetCatalogByIdQuery(id));
+            return ApiOk(response);
+        }
+
+        /// <summary>
         /// Get All Products
         /// </summary>
         /// <returns></returns>

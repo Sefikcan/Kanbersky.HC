@@ -38,7 +38,7 @@ namespace Kanbersky.HC.Ordering.Api
             services
                .RegisterCoreLayer(Configuration)
                .RegisterInfrastructureLayer(Configuration)
-               .RegisterServiceLayer();
+               .RegisterOrderServiceLayer();
         }
 
         /// <summary>

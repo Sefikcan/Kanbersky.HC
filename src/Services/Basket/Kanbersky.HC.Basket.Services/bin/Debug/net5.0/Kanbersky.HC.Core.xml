@@ -227,6 +227,39 @@
             <param name="apiVersionDescriptionProvider"></param>
             <returns></returns>
         </member>
+        <member name="T:Kanbersky.HC.Core.Extensions.HttpClientExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HttpClientExtensions.ReadContentAs``1(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="response"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HttpClientExtensions.PostAsJson``1(System.Net.Http.HttpClient,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="httpClient"></param>
+            <param name="url"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HttpClientExtensions.PutAsJson``1(System.Net.Http.HttpClient,System.String,``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="httpClient"></param>
+            <param name="url"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
         <member name="T:Kanbersky.HC.Core.Logging.Concrete.Serilog.SerilogHelper">
             <summary>
             
@@ -371,6 +404,17 @@
             </summary>
             <param name="context"></param>
             <returns></returns>
+        </member>
+        <member name="T:Kanbersky.HC.Core.Models.BaseClientModel`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Models.BaseClientModel`1.Result">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:Kanbersky.HC.Core.Pipelines.ValidationPipelines`2">
             <summary>
@@ -631,12 +675,52 @@
             
             </summary>
         </member>
+        <member name="T:Kanbersky.HC.Core.Settings.Concrete.BFF.ApiSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Settings.Concrete.BFF.ApiSettings.CatalogUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Settings.Concrete.BFF.ApiSettings.OrderingUrl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Settings.Concrete.BFF.ApiSettings.BasketUrl">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Kanbersky.HC.Core.Settings.Concrete.Caching.CacheSettings">
             <summary>
             
             </summary>
         </member>
         <member name="P:Kanbersky.HC.Core.Settings.Concrete.Caching.CacheSettings.ConnectionString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Kanbersky.HC.Core.Settings.Concrete.CircuitBreaker.CircuitBreakerSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Settings.Concrete.CircuitBreaker.CircuitBreakerSettings.HandledEventsAllowedBeforeBreaking">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Settings.Concrete.CircuitBreaker.CircuitBreakerSettings.DurationOfBreak">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Settings.Concrete.CircuitBreaker.CircuitBreakerSettings.RetryCount">
             <summary>
             
             </summary>

@@ -37,6 +37,12 @@ services:
       context: .
       dockerfile: src/Services/Ordering/Kanbersky.HC.Ordering.Api/Dockerfile
 
+  kanbersky.hc.bff.api:
+    image: ${DOCKER_REGISTRY-}kanberskyhcbffapi
+    build:
+      context: .
+      dockerfile: src/BFF/Kanbersky.HC.BFF.Api/Dockerfile
+
 volumes:
     elasticsearch-data:
     mongo_data:

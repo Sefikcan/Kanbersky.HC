@@ -36,7 +36,7 @@ namespace Kanbersky.HC.Basket.Api
             //TODO: Add Healthcheck in redis
             services
                 .RegisterCoreLayer(Configuration)
-                .RegisterServiceLayer();
+                .RegisterBasketServiceLayer();
         }
 
         /// <summary>

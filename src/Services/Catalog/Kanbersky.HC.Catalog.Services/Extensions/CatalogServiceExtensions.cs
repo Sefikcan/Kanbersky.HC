@@ -6,8 +6,9 @@ namespace Kanbersky.HC.Catalog.Services.Extensions
 {
     public static class CatalogServiceExtensions
     {
-        public static IServiceCollection RegisterServiceLayer(this IServiceCollection services)
+        public static IServiceCollection RegisterCatalogServiceLayer(this IServiceCollection services)
         {
+            var c = Assembly.GetExecutingAssembly();
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             return services;

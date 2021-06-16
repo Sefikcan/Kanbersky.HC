@@ -15,6 +15,13 @@
             </summary>
             <param name="mediator"></param>
         </member>
+        <member name="M:Kanbersky.HC.Catalog.Api.Controllers.CatalogsController.GetProductById(System.String)">
+            <summary>
+            Get Product Info By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:Kanbersky.HC.Catalog.Api.Controllers.CatalogsController.GetAllProducts">
             <summary>
             Get All Products

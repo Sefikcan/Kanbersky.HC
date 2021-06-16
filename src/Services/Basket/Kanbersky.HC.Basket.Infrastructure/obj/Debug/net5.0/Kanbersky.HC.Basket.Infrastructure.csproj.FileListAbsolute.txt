@@ -9,4 +9,3 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\ref\Kanbersky.HC.Basket.Infrastructure.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.pdb
-D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Basket.Infrastructure.csprojAssemblyReference.cache

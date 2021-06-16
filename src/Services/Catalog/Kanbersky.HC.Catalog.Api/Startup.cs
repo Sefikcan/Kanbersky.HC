@@ -38,7 +38,7 @@ namespace Kanbersky.HC.Catalog.Api
             services
                 .RegisterCoreLayer(Configuration)
                 .RegisterKanberskyMongoDB(Configuration)
-                .RegisterServiceLayer();
+                .RegisterCatalogServiceLayer();
         }
 
         /// <summary>

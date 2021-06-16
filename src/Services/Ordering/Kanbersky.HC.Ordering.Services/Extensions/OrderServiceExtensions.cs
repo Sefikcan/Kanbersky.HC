@@ -6,7 +6,7 @@ namespace Kanbersky.HC.Ordering.Services.Extensions
 {
     public static class OrderServiceExtensions
     {
-        public static IServiceCollection RegisterServiceLayer(this IServiceCollection services)
+        public static IServiceCollection RegisterOrderServiceLayer(this IServiceCollection services)
         {
             services.AddMediatR(Assembly.GetExecutingAssembly());
 

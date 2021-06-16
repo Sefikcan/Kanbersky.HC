@@ -44,6 +44,28 @@ services:
     ports:
     - published: 8001
       target: 80
+  kanbersky.hc.bff.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC
+      dockerfile: src/BFF/Kanbersky.HC.BFF.Api/Dockerfile
+    container_name: kanbersky.hc.bff.api
+    depends_on:
+      kanbersky.hc.basket.api:
+        condition: service_started
+      kanbersky.hc.catalog.api:
+        condition: service_started
+      kanbersky.hc.ordering.api:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ApiSettings:BasketUrl: http://kanbersky.hc.basket.api
+      ApiSettings:CatalogUrl: http://kanbersky.hc.catalog.api
+      ApiSettings:OrderingUrl: http://kanbersky.hc.ordering.api
+      ElasticsearchSettings:Url: http://elasticsearch
+    image: kanberskyhcbffapi
+    ports:
+    - published: 8048
+      target: 80
   kanbersky.hc.catalog.api:
     build:
       context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC
@@ -97,7 +119,20 @@ services:
     - published: 1433
       target: 1433
     restart: always
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce
+    ports:
+    - published: 8010
+      target: 8000
+    - published: 9000
+      target: 9000
+    restart: always
+    volumes:
+    - portainer_data:/data:rw
+    - /var/run/docker.sock:/var/run/docker.sock:rw
 version: '3.4'
 volumes:
   elasticsearch-data: {}
   mongo_data: {}
+  portainer_data: {}

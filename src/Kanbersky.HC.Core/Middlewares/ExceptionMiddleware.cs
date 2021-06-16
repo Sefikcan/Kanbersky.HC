@@ -2,7 +2,6 @@
 using Kanbersky.HC.Core.Results.Exceptions.Concrete;
 using Microsoft.AspNetCore.Http;
 using System;
-using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -50,14 +49,6 @@ namespace Kanbersky.HC.Core.Middlewares
             }
             catch (Exception ex)
             {
-                if (ex.InnerException is SocketException se && se.SocketErrorCode == SocketError.ConnectionRefused)
-                {
-                   // var hostWithPort = request.RequestUri.IsDefaultPort
-                   //? request.RequestUri.DnsSafeHost
-                   //: $"{request.RequestUri.DnsSafeHost}:{request.RequestUri.Port}";
-
-                   // _logger.LogCritical(ex, "Unable to connect to {Host} Please check the configuration to ensure the correct URL for the service has beed configured.", hostWithPort);
-                }
                 await ThrowError(context, ex, statusCode: StatusCodes.Status500InternalServerError);
             }
         }

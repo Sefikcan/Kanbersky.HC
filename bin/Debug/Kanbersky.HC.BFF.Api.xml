@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kanbersky.HC.BFF.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Kanbersky.HC.BFF.Api.Controllers.OrdersController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.BFF.Api.Controllers.OrdersController.#ctor(Kanbersky.HC.BFF.Services.Abstract.IOrderService)">
+            <summary>
+            ctor
+            </summary>
+            <param name="orderService"></param>
+        </member>
+        <member name="M:Kanbersky.HC.BFF.Api.Controllers.OrdersController.CreateOrder(Kanbersky.HC.BFF.Services.DTO.Request.Ordering.CreateOrderRequestModel)">
+            <summary>
+            Create Order
+            </summary>
+            <param name="createOrderRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Kanbersky.HC.BFF.Api.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.BFF.Api.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Kanbersky.HC.BFF.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Kanbersky.HC.BFF.Api.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.BFF.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            ctor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Kanbersky.HC.BFF.Api.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.BFF.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Kanbersky.HC.BFF.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="apiVersionDescriptionProvider"></param>
+        </member>
+    </members>
+</doc>

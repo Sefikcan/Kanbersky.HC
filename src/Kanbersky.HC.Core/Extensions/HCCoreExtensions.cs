@@ -71,7 +71,11 @@ namespace Kanbersky.HC.Core.Extensions
                 cfg.AssumeDefaultVersionWhenUnspecified = true;
             });
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+            });
+
             services.AddSwaggerGen(c =>
             {
                 var provider = services.BuildServiceProvider();
