@@ -9,3 +9,4 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Catalog\Kanbersky
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Catalog\Kanbersky.HC.Catalog.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Catalog.Infrastructure.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Catalog\Kanbersky.HC.Catalog.Infrastructure\obj\Debug\net5.0\ref\Kanbersky.HC.Catalog.Infrastructure.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Catalog\Kanbersky.HC.Catalog.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Catalog.Infrastructure.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Catalog\Kanbersky.HC.Catalog.Infrastructure\obj\Debug\net5.0\Kanbersky.HC.Catalog.Infrastructure.csprojAssemblyReference.cache

@@ -1,6 +1,8 @@
-﻿using Kanbersky.HC.Core.Logging.Models;
+﻿using Kanbersky.HC.Core.Logging.Concrete.Serilog;
+using Kanbersky.HC.Core.Logging.Models;
 using Kanbersky.HC.Core.Results.Exceptions.Concrete;
 using Microsoft.AspNetCore.Http;
+using Serilog;
 using System;
 using System.Text;
 using System.Text.Json;
@@ -14,6 +16,7 @@ namespace Kanbersky.HC.Core.Middlewares
     public class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;
+        private readonly ILogger _logger;
 
         /// <summary>
         /// ctor
@@ -22,6 +25,7 @@ namespace Kanbersky.HC.Core.Middlewares
         public ExceptionMiddleware(RequestDelegate next)
         {
             _next = next;
+            _logger = Log.ForContext<ExceptionMiddleware>();
         }
 
         /// <summary>
@@ -37,29 +41,31 @@ namespace Kanbersky.HC.Core.Middlewares
             }
             catch (NotFoundException ex)
             {
-                await ThrowError(context, ex, statusCode: StatusCodes.Status404NotFound);
+                await ThrowError(context, ex, _logger, statusCode: StatusCodes.Status404NotFound);
             }
             catch (BadRequestException ex)
             {
-                await ThrowError(context, ex, statusCode: StatusCodes.Status400BadRequest);
+                await ThrowError(context, ex, _logger, statusCode: StatusCodes.Status400BadRequest);
             }
             catch (NotImplementedException ex)
             {
-                await ThrowError(context, ex, statusCode: StatusCodes.Status501NotImplemented);
+                await ThrowError(context, ex, _logger, statusCode: StatusCodes.Status501NotImplemented);
             }
             catch (Exception ex)
             {
-                await ThrowError(context, ex, statusCode: StatusCodes.Status500InternalServerError);
+                await ThrowError(context, ex, _logger, statusCode: StatusCodes.Status500InternalServerError);
             }
         }
 
-        private static async Task ThrowError(HttpContext context, Exception ex, string contentType = "application/json", int statusCode = StatusCodes.Status500InternalServerError)
+        private static async Task ThrowError(HttpContext context, Exception ex, ILogger logger, string contentType = "application/json", int statusCode = StatusCodes.Status500InternalServerError)
         {
             var logModel = new LoggerModel
             {
                 ResponseStatusCode = statusCode,
                 InnerException = ex.Message
             };
+
+            logger.PrepareLogger(logModel).Error(LoggerTemplates.Error);
 
             var responseBody = JsonSerializer.Serialize(logModel, new JsonSerializerOptions
             {

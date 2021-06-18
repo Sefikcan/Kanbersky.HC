@@ -260,6 +260,19 @@
             <param name="data"></param>
             <returns></returns>
         </member>
+        <member name="T:Kanbersky.HC.Core.Logging.Concrete.Serilog.SerilogExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Logging.Concrete.Serilog.SerilogExtensions.PrepareLogger(Serilog.ILogger,Kanbersky.HC.Core.Logging.Models.LoggerModel)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="T:Kanbersky.HC.Core.Logging.Concrete.Serilog.SerilogHelper">
             <summary>
             
