@@ -1,0 +1,226 @@
+services:
+  basketdb:
+    container_name: basketdb
+    image: redis:alpine
+    ports:
+    - published: 6379
+      target: 6379
+    restart: always
+  catalogdb:
+    container_name: catalogdb
+    image: mongo
+    ports:
+    - published: 27017
+      target: 27017
+    restart: always
+    volumes:
+    - mongo_data:/data/db:rw
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      discovery.type: single-node
+      xpack.monitoring.enabled: "true"
+      xpack.watcher.enabled: "false"
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.13.1
+    ports:
+    - published: 9200
+      target: 9200
+    volumes:
+    - elasticsearch-data:/usr/share/elasticsearch/data:rw
+  kanbersky.hc.basket.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC
+      dockerfile: src/Services/Basket/Kanbersky.HC.Basket.Api/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Kanbersky.HC.Basket.Api
+      target: base
+    container_name: kanbersky.hc.basket.api
+    depends_on:
+      basketdb:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      CacheSettings:ConnectionString: basketdb:6379
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      ElasticsearchSettings:Url: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: ''
+    image: kanberskyhcbasketapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8001
+      target: 80
+    tty: true
+    volumes:
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api:/app:rw
+    - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\User\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\User\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\User\.nuget\packages:/root/.nuget/packages:ro
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src:rw
+  kanbersky.hc.bff.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC
+      dockerfile: src/BFF/Kanbersky.HC.BFF.Api/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Kanbersky.HC.BFF.Api
+      target: base
+    container_name: kanbersky.hc.bff.api
+    depends_on:
+      kanbersky.hc.basket.api:
+        condition: service_started
+      kanbersky.hc.catalog.api:
+        condition: service_started
+      kanbersky.hc.ordering.api:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ApiSettings:BasketUrl: http://kanbersky.hc.basket.api
+      ApiSettings:CatalogUrl: http://kanbersky.hc.catalog.api
+      ApiSettings:OrderingUrl: http://kanbersky.hc.ordering.api
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      ElasticsearchSettings:Url: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: ''
+    image: kanberskyhcbffapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8048
+      target: 80
+    tty: true
+    volumes:
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Api:/app:rw
+    - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\User\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\User\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\User\.nuget\packages:/root/.nuget/packages:ro
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src:rw
+  kanbersky.hc.catalog.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC
+      dockerfile: src/Services/Catalog/Kanbersky.HC.Catalog.Api/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Kanbersky.HC.Catalog.Api
+      target: base
+    container_name: kanbersky.hc.catalog.api
+    depends_on:
+      catalogdb:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      ElasticsearchSettings:Url: http://elasticsearch:9200
+      MongoDBSettings:ConnectionStrings: mongodb://catalogdb:27017
+      NUGET_FALLBACK_PACKAGES: ''
+    image: kanberskyhccatalogapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8002
+      target: 80
+    tty: true
+    volumes:
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Catalog\Kanbersky.HC.Catalog.Api:/app:rw
+    - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\User\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\User\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\User\.nuget\packages:/root/.nuget/packages:ro
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src:rw
+  kanbersky.hc.ordering.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC
+      dockerfile: src/Services/Ordering/Kanbersky.HC.Ordering.Api/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Kanbersky.HC.Ordering.Api
+      target: base
+    container_name: kanbersky.hc.ordering.api
+    depends_on:
+      orderdb:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      ElasticsearchSettings:Url: http://elasticsearch:9200
+      NUGET_FALLBACK_PACKAGES: ''
+      OrderDbSettings:ConnectionStrings: Server=orderdb;Database=OrderDb;User Id=sa;Password=ttt12345678
+    image: kanberskyhcorderingapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8003
+      target: 80
+    tty: true
+    volumes:
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Api:/app:rw
+    - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\User\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\User\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\User\.nuget\packages:/root/.nuget/packages:ro
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src:rw
+  kibana:
+    container_name: kibana
+    depends_on:
+      elasticsearch:
+        condition: service_started
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    image: docker.elastic.co/kibana/kibana:7.13.1
+    ports:
+    - published: 5601
+      target: 5601
+  orderdb:
+    container_name: orderdb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: ttt12345678
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1433
+      target: 1433
+    restart: always
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce
+    ports:
+    - published: 8010
+      target: 8000
+    - published: 9000
+      target: 9000
+    restart: always
+    volumes:
+    - portainer_data:/data:rw
+    - /var/run/docker.sock:/var/run/docker.sock:rw
+version: '3.4'
+volumes:
+  elasticsearch-data: {}
+  mongo_data: {}
+  portainer_data: {}

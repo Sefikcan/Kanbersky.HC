@@ -39,7 +39,7 @@ services:
   kibana:
     container_name: kibana
     environment:
-      - ELASTICSEARCH_URL=http://elasticsearch
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
     depends_on:
       - elasticsearch
     ports:
@@ -60,7 +60,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "CacheSettings:ConnectionString=basketdb:6379"
-      - "ElasticsearchSettings:Url=http://elasticsearch"
+      - "ElasticsearchSettings:Url=http://elasticsearch:9200"
     ports:
       - "8001:80"
     depends_on:
@@ -71,7 +71,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "MongoDBSettings:ConnectionStrings=mongodb://catalogdb:27017"
-      - "ElasticsearchSettings:Url=http://elasticsearch"
+      - "ElasticsearchSettings:Url=http://elasticsearch:9200"
     ports:
       - "8002:80"
     depends_on:
@@ -82,7 +82,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "OrderDbSettings:ConnectionStrings=Server=orderdb;Database=OrderDb;User Id=sa;Password=ttt12345678"  
-      - "ElasticsearchSettings:Url=http://elasticsearch"
+      - "ElasticsearchSettings:Url=http://elasticsearch:9200"
     ports:
       - "8003:80"
     depends_on:
@@ -92,10 +92,10 @@ services:
     container_name: kanbersky.hc.bff.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "ApiSettings:CatalogUrl=http://kanbersky.hc.catalog.api"
-      - "ApiSettings:BasketUrl=http://kanbersky.hc.basket.api"
-      - "ApiSettings:OrderingUrl=http://kanbersky.hc.ordering.api"
-      - "ElasticsearchSettings:Url=http://elasticsearch"
+      - "ApiSettings:CatalogUrl=http://kanbersky.hc.catalog.api/api"
+      - "ApiSettings:BasketUrl=http://kanbersky.hc.basket.api/api"
+      - "ApiSettings:OrderingUrl=http://kanbersky.hc.ordering.api/api"
+      - "ElasticsearchSettings:Url=http://elasticsearch:9200"
     depends_on:
       - kanbersky.hc.basket.api
       - kanbersky.hc.catalog.api
