@@ -28,13 +28,11 @@ namespace Kanbersky.HC.BFF.Services.Extensions
 
             services.AddHttpClient<IOrderingClientService, OrderingClientService>("Ordering", c =>
                 c.BaseAddress = new Uri(apiSettings.OrderingUrl))
-                //.AddHttpMessageHandler<LoggingDelegatingHandler>()
                 .AddPolicyHandler(GetRetryPolicy(circuitBreakerSettings))
                 .AddPolicyHandler(GetCircuitBreakerPolicy(circuitBreakerSettings));
 
             services.AddHttpClient<IProductClientService, ProductClientService>("Catalog", c =>
                c.BaseAddress = new Uri(apiSettings.CatalogUrl))
-               //.AddHttpMessageHandler<LoggingDelegatingHandler>()
                .AddPolicyHandler(GetRetryPolicy(circuitBreakerSettings))
                .AddPolicyHandler(GetCircuitBreakerPolicy(circuitBreakerSettings));
 
