@@ -32,6 +32,7 @@ namespace Kanbersky.HC.BFF.Api.Controllers
         /// <param name="createOrderRequest"></param>
         /// <returns></returns>
         [HttpPost]
+        [MapToApiVersion("1.0")]
         [ProducesResponseType(typeof(OrderResponseModel), StatusCodes.Status201Created)]
         public async Task<IActionResult> CreateOrder([FromBody] CreateOrderRequestModel createOrderRequest)
         {

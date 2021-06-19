@@ -33,10 +33,6 @@ namespace Kanbersky.HC.Catalog.Services.Queries
         public async Task<CatalogResponseModel> Handle(GetCatalogByIdQuery request, CancellationToken cancellationToken = default)
         {
             var response = await _repository.GetByIdAsync(request.Id);
-            if (response == null)
-            {
-                throw new NotFoundException("Product not found!");
-            }
             return _mapper.Map<Product, CatalogResponseModel>(response);
         }
     }
