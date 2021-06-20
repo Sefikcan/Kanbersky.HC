@@ -43,6 +43,12 @@ services:
       context: .
       dockerfile: src/BFF/Kanbersky.HC.BFF.Api/Dockerfile
 
+  kanbersky.hc.healthstatus:
+    image: ${DOCKER_REGISTRY-}kanberskyhchealthstatus
+    build:
+      context: .
+      dockerfile: src/WebUI/Kanbersky.HC.HealthStatus/Dockerfile
+
 volumes:
     elasticsearch-data:
     mongo_data:

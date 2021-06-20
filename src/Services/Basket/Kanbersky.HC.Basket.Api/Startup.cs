@@ -33,9 +33,9 @@ namespace Kanbersky.HC.Basket.Api
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
-            //TODO: Add Healthcheck in redis
             services
                 .RegisterCoreLayer(Configuration)
+                .AddRedisHealthCheck(Configuration)
                 .RegisterBasketServiceLayer();
         }
 

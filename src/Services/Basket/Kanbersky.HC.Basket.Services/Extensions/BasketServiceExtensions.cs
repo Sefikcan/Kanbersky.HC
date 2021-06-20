@@ -8,8 +8,6 @@ namespace Kanbersky.HC.Basket.Services.Extensions
     {
         public static IServiceCollection RegisterBasketServiceLayer(this IServiceCollection services)
         {
-            var c = Assembly.GetExecutingAssembly();
-
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             return services;

@@ -34,10 +34,10 @@ namespace Kanbersky.HC.Catalog.Api
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
-            //TODO: Add Healthcheck in redis
             services
                 .RegisterCoreLayer(Configuration)
                 .RegisterKanberskyMongoDB(Configuration)
+                .AddMongoHealthCheck(Configuration)
                 .RegisterCatalogServiceLayer();
         }
 

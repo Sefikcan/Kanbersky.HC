@@ -1,4 +1,5 @@
 using Kanbersky.HC.Core.Extensions;
+using Kanbersky.HC.Ordering.Infrastructure.DataAccess.EntityFramework;
 using Kanbersky.HC.Ordering.Infrastructure.Extensions;
 using Kanbersky.HC.Ordering.Services.Extensions;
 using Microsoft.AspNetCore.Builder;
@@ -34,10 +35,10 @@ namespace Kanbersky.HC.Ordering.Api
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
-            //TODO: Add Healthcheck in entity framework
             services
                .RegisterCoreLayer(Configuration)
                .RegisterInfrastructureLayer(Configuration)
+               .AddEntityFrameworkHealthCheck<OrderDbContext>()
                .RegisterOrderServiceLayer();
         }
 

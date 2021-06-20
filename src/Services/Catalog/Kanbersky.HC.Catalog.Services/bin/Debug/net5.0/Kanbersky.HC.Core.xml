@@ -227,6 +227,67 @@
             <param name="apiVersionDescriptionProvider"></param>
             <returns></returns>
         </member>
+        <member name="T:Kanbersky.HC.Core.Extensions.HealthCheckExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HealthCheckExtensions.AddRedisHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HealthCheckExtensions.AddMongoHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HealthCheckExtensions.AddEntityFrameworkHealthCheck``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HealthCheckExtensions.AddPostgreSQLHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HealthCheckExtensions.AddMySQLHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HealthCheckExtensions.AddMsSQLHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Core.Extensions.HealthCheckExtensions.AddElasticsearchHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
         <member name="T:Kanbersky.HC.Core.Extensions.HttpClientExtensions">
             <summary>
             
