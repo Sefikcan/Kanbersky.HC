@@ -114,3 +114,4 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\YamlDotNet.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Fractions.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Kanbersky.HC.HealthStatus.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Kanbersky.HealthChecks.dll

@@ -9,6 +9,7 @@
       "Kanbersky.HC.Ordering.Infrastructure/1.0.0": {
         "dependencies": {
           "Kanbersky.HC.Core": "1.0.0",
+          "Kanbersky.HealthChecks": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.7"
         },
@@ -152,6 +153,24 @@
           "lib/net5.0/FluentValidation.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "10.2.3.0"
+          }
+        }
+      },
+      "Kanbersky.HealthChecks/1.0.0": {
+        "dependencies": {
+          "AspNetCore.HealthChecks.Elasticsearch": "5.0.1",
+          "AspNetCore.HealthChecks.MongoDb": "5.0.1",
+          "AspNetCore.HealthChecks.MySql": "5.0.1",
+          "AspNetCore.HealthChecks.NpgSql": "5.0.2",
+          "AspNetCore.HealthChecks.Redis": "5.0.2",
+          "AspNetCore.HealthChecks.SqlServer": "5.0.3",
+          "AspNetCore.HealthChecks.UI.Client": "5.0.1",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "5.0.7"
+        },
+        "runtime": {
+          "lib/net5.0/Kanbersky.HealthChecks.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -1816,12 +1835,6 @@
       },
       "Kanbersky.HC.Core/1.0.0": {
         "dependencies": {
-          "AspNetCore.HealthChecks.Elasticsearch": "5.0.1",
-          "AspNetCore.HealthChecks.MongoDb": "5.0.1",
-          "AspNetCore.HealthChecks.MySql": "5.0.1",
-          "AspNetCore.HealthChecks.NpgSql": "5.0.2",
-          "AspNetCore.HealthChecks.Redis": "5.0.2",
-          "AspNetCore.HealthChecks.SqlServer": "5.0.3",
           "AspNetCore.HealthChecks.UI.Client": "5.0.1",
           "AutoMapper": "10.1.1",
           "FluentValidation": "10.2.3",
@@ -1834,7 +1847,6 @@
           "Microsoft.Extensions.Caching.StackExchangeRedis": "5.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
-          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "5.0.7",
           "Serilog.AspNetCore": "4.1.0",
           "Serilog.Enrichers.Environment": "2.1.3",
           "Serilog.Sinks.Elasticsearch": "8.4.1",
@@ -1935,6 +1947,13 @@
       "sha512": "sha512-R2w/E6jgg9RPSlg7JQSTHg6AWDwlOXARaV4ZUKrPJ1gi1e+oaBEcomxmo29j9BLZivkyQhOpAboJ9nKZS4/xYA==",
       "path": "fluentvalidation/10.2.3",
       "hashPath": "fluentvalidation.10.2.3.nupkg.sha512"
+    },
+    "Kanbersky.HealthChecks/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NnEFayzSKiX/AF/OjetgiwnPieZ0d5ZJymNUk2ac3ryByqbBzPCgmBjcB/yuSsWiQkrco2gHyJGnZBJn/e/FSg==",
+      "path": "kanbersky.healthchecks/1.0.0",
+      "hashPath": "kanbersky.healthchecks.1.0.0.nupkg.sha512"
     },
     "Mapster/7.2.0": {
       "type": "package",

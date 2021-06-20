@@ -4,4 +4,12 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Kanbersky.HealthChecks" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Kanbersky.HC.Core\Kanbersky.HC.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,11 +1,14 @@
 using Kanbersky.HC.Catalog.Services.Extensions;
 using Kanbersky.HC.Core.Extensions;
+using Kanbersky.HealthChecks.Extensions;
+using Kanbersky.HealthChecks.Models.Concrete;
 using Kanbersky.MongoDB.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 namespace Kanbersky.HC.Catalog.Api
 {
@@ -37,7 +40,12 @@ namespace Kanbersky.HC.Catalog.Api
             services
                 .RegisterCoreLayer(Configuration)
                 .RegisterKanberskyMongoDB(Configuration)
-                .AddMongoHealthCheck(Configuration)
+                .AddMongoHealthCheck(new MongoDBHealthChecksModel 
+                {
+                    Name = "MongoDB Health",
+                    FailureStatus = HealthStatus.Degraded,
+                    MongoDBConnectionString = Configuration["MongoDBSettings:ConnectionStrings"]
+                })
                 .RegisterCatalogServiceLayer();
         }
 

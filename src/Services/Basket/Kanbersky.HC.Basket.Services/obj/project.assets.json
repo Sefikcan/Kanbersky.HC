@@ -156,6 +156,25 @@
           "lib/net5.0/FluentValidation.dll": {}
         }
       },
+      "Kanbersky.HealthChecks/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AspNetCore.HealthChecks.Elasticsearch": "5.0.1",
+          "AspNetCore.HealthChecks.MongoDb": "5.0.1",
+          "AspNetCore.HealthChecks.MySql": "5.0.1",
+          "AspNetCore.HealthChecks.NpgSql": "5.0.2",
+          "AspNetCore.HealthChecks.Redis": "5.0.2",
+          "AspNetCore.HealthChecks.SqlServer": "5.0.3",
+          "AspNetCore.HealthChecks.UI.Client": "5.0.1",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "5.0.7"
+        },
+        "compile": {
+          "lib/net5.0/Kanbersky.HealthChecks.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Kanbersky.HealthChecks.dll": {}
+        }
+      },
       "Mapster/7.2.0": {
         "type": "package",
         "dependencies": {
@@ -2748,23 +2767,24 @@
       "Kanbersky.HC.Basket.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Kanbersky.HC.Core": "1.0.0",
+          "Kanbersky.HealthChecks": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Kanbersky.HC.Basket.Infrastructure.dll": {}
         },
         "runtime": {
           "bin/placeholder/Kanbersky.HC.Basket.Infrastructure.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Kanbersky.HC.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "AspNetCore.HealthChecks.Elasticsearch": "5.0.1",
-          "AspNetCore.HealthChecks.MongoDb": "5.0.1",
-          "AspNetCore.HealthChecks.MySql": "5.0.1",
-          "AspNetCore.HealthChecks.NpgSql": "5.0.2",
-          "AspNetCore.HealthChecks.Redis": "5.0.2",
-          "AspNetCore.HealthChecks.SqlServer": "5.0.3",
           "AspNetCore.HealthChecks.UI.Client": "5.0.1",
           "AutoMapper": "10.1.1",
           "FluentValidation": "10.2.3",
@@ -2777,7 +2797,6 @@
           "Microsoft.Extensions.Caching.StackExchangeRedis": "5.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
-          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "5.0.7",
           "Serilog.AspNetCore": "4.1.0",
           "Serilog.Enrichers.Environment": "2.1.3",
           "Serilog.Sinks.Elasticsearch": "8.4.1",
@@ -2974,6 +2993,20 @@
         "lib/netstandard2.0/FluentValidation.xml",
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "Kanbersky.HealthChecks/1.0.0": {
+      "sha512": "NnEFayzSKiX/AF/OjetgiwnPieZ0d5ZJymNUk2ac3ryByqbBzPCgmBjcB/yuSsWiQkrco2gHyJGnZBJn/e/FSg==",
+      "type": "package",
+      "path": "kanbersky.healthchecks/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bin/Debug/net5.0/Kanbersky.HealthChecks.dll",
+        "bin/Release/net5.0/Kanbersky.HealthChecks.dll",
+        "kanbersky.healthchecks.1.0.0.nupkg.sha512",
+        "kanbersky.healthchecks.nuspec",
+        "lib/net5.0/Kanbersky.HealthChecks.dll"
       ]
     },
     "Mapster/7.2.0": {

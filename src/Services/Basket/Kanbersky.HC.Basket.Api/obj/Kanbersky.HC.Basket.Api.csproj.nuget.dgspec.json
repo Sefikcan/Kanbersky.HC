@@ -40,30 +40,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "AspNetCore.HealthChecks.Elasticsearch": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "AspNetCore.HealthChecks.MongoDb": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "AspNetCore.HealthChecks.MySql": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "AspNetCore.HealthChecks.NpgSql": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "AspNetCore.HealthChecks.Redis": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "AspNetCore.HealthChecks.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.3, )"
-            },
             "AspNetCore.HealthChecks.UI.Client": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -111,10 +87,6 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[5.0.0, )"
-            },
-            "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.7, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -239,7 +211,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\WorkSpaces\\Back-end\\Microservices\\Kanbersky.HC\\src\\Kanbersky.HC.Core\\Kanbersky.HC.Core.csproj": {
+                "projectPath": "D:\\WorkSpaces\\Back-end\\Microservices\\Kanbersky.HC\\src\\Kanbersky.HC.Core\\Kanbersky.HC.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -251,6 +227,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Kanbersky.HealthChecks": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -262,6 +244,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

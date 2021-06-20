@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "y4+CpnAmiQrSIvVdROctE/Xu6ZVkoz26HkyafFEZ5tEywEolJuEwg8N9ZvfnFITiVXkQ4WxCEG7KkFYGjsZ8CA==",
+  "dgSpecHash": "2k8NEE+Y4K6Jhb06fhdZ9N1hvCxH8Zg8cEkfIsxsbmVNvNu/zOUkCps6HJfhvq6NwAvUHCRayw4O+vM65ZmjDQ==",
   "success": true,
   "projectFilePath": "D:\\WorkSpaces\\Back-end\\Microservices\\Kanbersky.HC\\src\\Services\\Ordering\\Kanbersky.HC.Ordering.Infrastructure\\Kanbersky.HC.Ordering.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\User\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\elasticsearch.net\\7.9.0\\elasticsearch.net.7.9.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\kanbersky.healthchecks\\1.0.0\\kanbersky.healthchecks.1.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mapster\\7.2.0\\mapster.7.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",

@@ -1,10 +1,7 @@
 ﻿using HealthChecks.UI.Client;
-using Kanbersky.HC.Core.Caching.Abstract;
-using Kanbersky.HC.Core.Caching.Concrete.Redis;
 using Kanbersky.HC.Core.Mappings.Abstract;
 using Kanbersky.HC.Core.Mappings.Concrete.Mapster;
 using Kanbersky.HC.Core.Middlewares;
-using Kanbersky.HC.Core.Settings.Concrete.Caching;
 using Kanbersky.HC.Core.Settings.Concrete.Swagger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -38,19 +35,9 @@ namespace Kanbersky.HC.Core.Extensions
         {
             services.AddSingleton<IKanberskyMapping, MapsterMapping>();
 
-            CacheSettings cacheSettings = new CacheSettings();
-            configuration.GetSection(nameof(CacheSettings)).Bind(cacheSettings);
-            services.AddSingleton(cacheSettings);
-
             SwaggerSettings swaggerSettings = new SwaggerSettings();
             configuration.GetSection(nameof(SwaggerSettings)).Bind(swaggerSettings);
             services.AddSingleton(swaggerSettings);
-
-            services.AddSingleton<ICacheService, RedisCacheService>();
-            services.AddStackExchangeRedisCache(options =>
-            {
-                options.Configuration = cacheSettings.ConnectionString;
-            });
 
             services.AddApiVersioning(cfg =>
             {

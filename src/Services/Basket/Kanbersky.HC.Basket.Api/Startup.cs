@@ -1,3 +1,4 @@
+using Kanbersky.HC.Basket.Infrastructure.Extensions;
 using Kanbersky.HC.Basket.Services.Extensions;
 using Kanbersky.HC.Core.Extensions;
 using Microsoft.AspNetCore.Builder;
@@ -35,7 +36,7 @@ namespace Kanbersky.HC.Basket.Api
         {
             services
                 .RegisterCoreLayer(Configuration)
-                .AddRedisHealthCheck(Configuration)
+                .RegisterInfrastructureLayer(Configuration)
                 .RegisterBasketServiceLayer();
         }
 

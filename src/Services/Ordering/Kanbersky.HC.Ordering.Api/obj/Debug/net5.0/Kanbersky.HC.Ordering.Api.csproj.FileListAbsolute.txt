@@ -117,3 +117,4 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersk
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Api\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Api\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Api\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Api\bin\Debug\net5.0\Kanbersky.HealthChecks.dll
