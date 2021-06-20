@@ -4,12 +4,16 @@ using Kanbersky.HC.BFF.Services.Clients.Concrete;
 using Kanbersky.HC.BFF.Services.Concrete;
 using Kanbersky.HC.Core.Settings.Concrete.BFF;
 using Kanbersky.HC.Core.Settings.Concrete.CircuitBreaker;
+using Kanbersky.HealthChecks.Extensions;
+using Kanbersky.HealthChecks.Models.Concrete;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Polly;
 using Polly.Extensions.Http;
 using Serilog;
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 
 namespace Kanbersky.HC.BFF.Services.Extensions
@@ -39,9 +43,36 @@ namespace Kanbersky.HC.BFF.Services.Extensions
             services.AddTransient<IOrderService, OrderService>();
             services.AddScoped<IProductClientService, ProductClientService>();
             services.AddScoped<IOrderingClientService, OrderingClientService>();
-
+            PrepareUrisGroup(services, apiSettings);
 
             return services;
+        }
+
+        private static void PrepareUrisGroup(IServiceCollection services, ApiSettings apiSettings)
+        {
+            var uris = new List<UrlGroupHealthChecksModel>
+            {
+                new UrlGroupHealthChecksModel
+                {
+                    ApiUrl = $"{apiSettings.CatalogUrl}/swagger/index.html",
+                    FailureStatus = HealthStatus.Degraded,
+                    Name = "Catalog Api Health"
+                },
+                new UrlGroupHealthChecksModel
+                {
+                    ApiUrl = $"{apiSettings.BasketUrl}/swagger/index.html",
+                    FailureStatus = HealthStatus.Degraded,
+                    Name = "Basket Api Health"
+                },
+                new UrlGroupHealthChecksModel
+                {
+                    ApiUrl = $"{apiSettings.OrderingUrl}/swagger/index.html",
+                    FailureStatus = HealthStatus.Degraded,
+                    Name = "Ordering Api Health"
+                }
+            };
+
+            services.AddUrlGroupsHealthCheck(uris);
         }
 
         private static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy(CircuitBreakerSettings settings)

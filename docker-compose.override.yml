@@ -92,9 +92,9 @@ services:
     container_name: kanbersky.hc.bff.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "ApiSettings:CatalogUrl=http://kanbersky.hc.catalog.api/api"
-      - "ApiSettings:BasketUrl=http://kanbersky.hc.basket.api/api"
-      - "ApiSettings:OrderingUrl=http://kanbersky.hc.ordering.api/api"
+      - "ApiSettings:CatalogUrl=http://kanbersky.hc.catalog.api"
+      - "ApiSettings:BasketUrl=http://kanbersky.hc.basket.api"
+      - "ApiSettings:OrderingUrl=http://kanbersky.hc.ordering.api"
       - "ElasticsearchSettings:Url=http://elasticsearch:9200"
     depends_on:
       - kanbersky.hc.basket.api
