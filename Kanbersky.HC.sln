@@ -40,6 +40,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{ECD1D74A-3892-44B1-A921-DB569D17C5AE}"
 	ProjectSection(SolutionItems) = preProject
 		PortainerNotlar.txt = PortainerNotlar.txt
+		PublicNotes.txt = PublicNotes.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BFF", "BFF", "{49B662BF-5729-498C-B665-F12641E9E8EF}"
@@ -52,7 +53,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{75E7F6B4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanbersky.HC.HealthStatus", "src\WebUI\Kanbersky.HC.HealthStatus\Kanbersky.HC.HealthStatus.csproj", "{AB05F367-272B-451C-B469-61BFA4B0E72D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kanbersky.Hc.Gateway.Api", "src\Gateway\Kanbersky.Hc.Gateway.Api\Kanbersky.Hc.Gateway.Api.csproj", "{420CC1D9-8090-42B2-8B57-5C6B63B24388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanbersky.Hc.Gateway.Api", "src\Gateway\Kanbersky.Hc.Gateway.Api\Kanbersky.Hc.Gateway.Api.csproj", "{420CC1D9-8090-42B2-8B57-5C6B63B24388}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

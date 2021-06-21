@@ -1,0 +1,7 @@
+** Docker compose ile container'larý ayaða kaldýrmak için aþaðýdaki kod bloðu terminale yazýlýp çalýþtýrýlýr.
+   -> docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+
+** Docker üzerinden ilgili port bilgileri formatý aþaðýdaki gibidir.
+   -> http://host.docker.internal:xxxx
+
+** Loglama iþlemi için serilog kullanýlmýþtýr. UI olarakda kibana ile log için bir arayüz sunulmuþtur.
