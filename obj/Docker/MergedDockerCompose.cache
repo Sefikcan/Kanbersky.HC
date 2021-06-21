@@ -58,9 +58,9 @@ services:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ApiSettings:BasketUrl: http://kanbersky.hc.basket.api/api
-      ApiSettings:CatalogUrl: http://kanbersky.hc.catalog.api/api
-      ApiSettings:OrderingUrl: http://kanbersky.hc.ordering.api/api
+      ApiSettings:BasketUrl: http://kanbersky.hc.basket.api
+      ApiSettings:CatalogUrl: http://kanbersky.hc.catalog.api
+      ApiSettings:OrderingUrl: http://kanbersky.hc.ordering.api
       ElasticsearchSettings:Url: http://elasticsearch:9200
     image: kanberskyhcbffapi
     ports:
@@ -81,6 +81,25 @@ services:
     image: kanberskyhccatalogapi
     ports:
     - published: 8002
+      target: 80
+  kanbersky.hc.gateway.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC
+      dockerfile: src/Gateway/Kanbersky.HC.Gateway.Api/Dockerfile
+    container_name: kanbersky.hc.gateway.api
+    depends_on:
+      kanbersky.hc.basket.api:
+        condition: service_started
+      kanbersky.hc.catalog.api:
+        condition: service_started
+      kanbersky.hc.ordering.api:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ElasticsearchSettings:Url: http://elasticsearch:9200
+    image: kanberskyhcgatewayapi
+    ports:
+    - published: 8010
       target: 80
   kanbersky.hc.healthstatus:
     build:

@@ -116,3 +116,14 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Kanbersky.HC.Catalog
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\obj\Debug\docker-compose.dcprojAssemblyReference.cache
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\ocelot.Development.json
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\ocelot.json
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\ocelot.Local.json
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Kanbersky.Hc.Gateway.Api.exe
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Kanbersky.Hc.Gateway.Api.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Ocelot.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Kanbersky.Hc.Gateway.Api.pdb

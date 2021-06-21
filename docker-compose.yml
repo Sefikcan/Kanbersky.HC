@@ -48,6 +48,12 @@ services:
     build:
       context: .
       dockerfile: src/WebUI/Kanbersky.HC.HealthStatus/Dockerfile
+  
+  kanbersky.hc.gateway.api:
+    image: ${DOCKER_REGISTRY-}kanberskyhcgatewayapi
+    build:
+      context: .
+      dockerfile: src/Gateway/Kanbersky.HC.Gateway.Api/Dockerfile
 
 volumes:
     elasticsearch-data:

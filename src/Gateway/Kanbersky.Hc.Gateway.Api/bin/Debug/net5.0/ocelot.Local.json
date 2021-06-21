@@ -1,0 +1,71 @@
+{
+  "Routes": [
+    //Catalog API
+    {
+      "DownstreamPathTemplate": "/api/v1/catalogs",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8001"
+        }
+      ],
+      "UpstreamPathTemplate": "/catalogs",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "FileCacheOptions": { "TtlSeconds": 15 }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/catalogs/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8001"
+        }
+      ],
+      "UpstreamPathTemplate": "/catalogs/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    //Basket API
+    {
+      "DownstreamPathTemplate": "/api/v1/baskets/{userName}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8001"
+        }
+      ],
+      "UpstreamPathTemplate": "/baskets/{userName}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/baskets",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8001"
+        }
+      ],
+      "UpstreamPathTemplate": "/baskets",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //Order API
+    {
+      "DownstreamPathTemplate": "/api/v1/orders/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8004"
+        }
+      ],
+      "UpstreamPathTemplate": "/orders/",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:7000"
+  }
+}

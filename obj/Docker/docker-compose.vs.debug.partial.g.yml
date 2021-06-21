@@ -81,6 +81,33 @@ services:
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
 
+  kanbersky.hc.gateway.api:
+    image: kanberskyhcgatewayapi:dev
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Kanbersky.Hc.Gateway.Api"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Gateway\Kanbersky.HC.Gateway.Api:/app
+      - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src
+      - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
   kanbersky.hc.healthstatus:
     image: kanberskyhchealthstatus:dev
     build:

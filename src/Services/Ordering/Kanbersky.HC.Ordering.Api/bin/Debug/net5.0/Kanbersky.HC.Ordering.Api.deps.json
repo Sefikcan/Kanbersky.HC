@@ -493,15 +493,18 @@
           "lib/netstandard2.1/Elasticsearch.Net.dll": {}
         }
       },
-      "FluentValidation/10.2.3": {
+      "FluentValidation/8.1.2": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "runtime": {
-          "lib/net5.0/FluentValidation.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "10.2.3.0"
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.1.2.0"
           }
         },
         "compile": {
-          "lib/net5.0/FluentValidation.dll": {}
+          "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
       "Kanbersky.HealthChecks/1.1.0": {
@@ -2388,7 +2391,7 @@
         "dependencies": {
           "AspNetCore.HealthChecks.UI.Client": "5.0.1",
           "AutoMapper": "10.1.1",
-          "FluentValidation": "10.2.3",
+          "FluentValidation": "8.1.2",
           "Mapster": "7.2.0",
           "MediatR": "9.0.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
@@ -4203,12 +4206,12 @@
       "path": "elasticsearch.net/7.9.0",
       "hashPath": "elasticsearch.net.7.9.0.nupkg.sha512"
     },
-    "FluentValidation/10.2.3": {
+    "FluentValidation/8.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-R2w/E6jgg9RPSlg7JQSTHg6AWDwlOXARaV4ZUKrPJ1gi1e+oaBEcomxmo29j9BLZivkyQhOpAboJ9nKZS4/xYA==",
-      "path": "fluentvalidation/10.2.3",
-      "hashPath": "fluentvalidation.10.2.3.nupkg.sha512"
+      "sha512": "sha512-AGxZY1i5BnQjr+9Q1AJnxtOlnU3pjQuwDPdDi0hsw9rZrottstyvXL13KCtaqqAwKgW+Lc9NFUNmwhiFk3iZww==",
+      "path": "fluentvalidation/8.1.2",
+      "hashPath": "fluentvalidation.8.1.2.nupkg.sha512"
     },
     "Kanbersky.HealthChecks/1.1.0": {
       "type": "package",

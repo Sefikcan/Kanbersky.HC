@@ -3,7 +3,6 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\bin\Debu
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\bin\Debug\net5.0\ref\Kanbersky.HC.Core.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\bin\Debug\net5.0\Kanbersky.HC.Core.pdb
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\bin\Debug\net5.0\Kanbersky.HC.Core.xml
-D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\obj\Debug\net5.0\Kanbersky.HC.Core.csprojAssemblyReference.cache
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\obj\Debug\net5.0\Kanbersky.HC.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\obj\Debug\net5.0\Kanbersky.HC.Core.AssemblyInfoInputs.cache
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Kanbersky.HC.Core\obj\Debug\net5.0\Kanbersky.HC.Core.AssemblyInfo.cs

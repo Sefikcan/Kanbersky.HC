@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G80Pv9Le1iSyeCuYsl9IHzNNDGzoKMyrmjhNeVraNLEIQ9nrbSK53VfT8fF0XCWRYaL3YvCL7Y3vyJmrE7Yn2w==",
+  "dgSpecHash": "Za3MAq7w6IVR/ZXGEQa5Ta3eS++NiT6B4wGlGxYbSXGtxZm5I8A3fOW5OlUZTMcsc6e8vyFYlUUYLzaHs08u+Q==",
   "success": true,
   "projectFilePath": "D:\\WorkSpaces\\Back-end\\Microservices\\Kanbersky.HC\\src\\Kanbersky.HC.Core\\Kanbersky.HC.Core.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\User\\.nuget\\packages\\aspnetcore.healthchecks.ui.core\\5.0.1\\aspnetcore.healthchecks.ui.core.5.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\elasticsearch.net\\7.8.1\\elasticsearch.net.7.8.1.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\8.1.2\\fluentvalidation.8.1.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mapster\\7.2.0\\mapster.7.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",

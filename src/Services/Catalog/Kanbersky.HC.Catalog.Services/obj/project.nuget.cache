@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "USQIRIxwY5q6wmUhSu2Z7hK9667hRgPmWMtPojnPASjvvOp5NgDRBP7Ow6KS/nPITSFSL5/BPBg0DIg8O6sJjg==",
+  "dgSpecHash": "lsBxyfCPXxmLlEseoRMpbDV5lRB/HA6BUlKZiWy2SG/OOk62unyhk65bdj6xJ+43AVFQgqWu4Bbx9s2eze3xtA==",
   "success": true,
   "projectFilePath": "D:\\WorkSpaces\\Back-end\\Microservices\\Kanbersky.HC\\src\\Services\\Catalog\\Kanbersky.HC.Catalog.Services\\Kanbersky.HC.Catalog.Services.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "C:\\Users\\User\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\elasticsearch.net\\7.8.1\\elasticsearch.net.7.8.1.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\8.1.2\\fluentvalidation.8.1.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\kanbersky.mongodb\\1.0.0\\kanbersky.mongodb.1.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mapster\\7.2.0\\mapster.7.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",

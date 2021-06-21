@@ -117,3 +117,15 @@ services:
        - HealthChecksUI__HealthChecks__4__Uri=http://kanbersky.hc.bff.api/healthy
     ports:
        - "8034:80" 
+  
+  kanbersky.hc.gateway.api:
+    container_name: kanbersky.hc.gateway.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ElasticsearchSettings:Url=http://elasticsearch:9200"
+    depends_on:
+        - kanbersky.hc.catalog.api
+        - kanbersky.hc.basket.api
+        - kanbersky.hc.ordering.api
+    ports:
+      - "8020:80"
