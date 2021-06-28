@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Kanbersky.HealthChecks" Version="1.1.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\Kanbersky.HC.Core\Kanbersky.HC.Core.csproj" />
   </ItemGroup>
 

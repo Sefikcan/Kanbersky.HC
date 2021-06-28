@@ -1,10 +1,9 @@
-﻿using HealthChecks.UI.Client;
-using Kanbersky.HC.Core.Mappings.Abstract;
+﻿using Kanbersky.HC.Core.Mappings.Abstract;
 using Kanbersky.HC.Core.Mappings.Concrete.Mapster;
 using Kanbersky.HC.Core.Middlewares;
 using Kanbersky.HC.Core.Settings.Concrete.Swagger;
+using Kanbersky.HealthChecks.Extensions;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
@@ -79,8 +78,6 @@ namespace Kanbersky.HC.Core.Extensions
                 c.ResolveConflictingActions(apc => apc.First());
             });
 
-            services.AddHealthChecks();
-
             return services;
         }
 
@@ -119,13 +116,10 @@ namespace Kanbersky.HC.Core.Extensions
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
-                endpoints.MapHealthChecks("/healthy", new HealthCheckOptions
-                {
-                    Predicate = _ => true,
-                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-                });
+                endpoints.MapControllers();               
             });
+
+            app.UseKanberskyHealthChecks();
 
             return app;
         }

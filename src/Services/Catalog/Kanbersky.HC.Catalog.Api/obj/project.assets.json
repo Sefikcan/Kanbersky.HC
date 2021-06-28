@@ -172,7 +172,7 @@
           "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
-      "Kanbersky.HealthChecks/1.1.0": {
+      "Kanbersky.HealthChecks/1.2.0": {
         "type": "package",
         "dependencies": {
           "AspNetCore.HealthChecks.Elasticsearch": "5.0.1",
@@ -2870,6 +2870,7 @@
           "AspNetCore.HealthChecks.UI.Client": "5.0.1",
           "AutoMapper": "10.1.1",
           "FluentValidation": "8.1.2",
+          "Kanbersky.HealthChecks": "1.2.0",
           "Mapster": "7.2.0",
           "MediatR": "9.0.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
@@ -3091,16 +3092,16 @@
         "lib/netstandard2.0/FluentValidation.xml"
       ]
     },
-    "Kanbersky.HealthChecks/1.1.0": {
-      "sha512": "u7AiGvJ5oBNu/iSpPs56ThOOX5Ax4VjW/i3atlOc9LJoZlikmPjgGZN6jdK4H5/X5NZ9atFAx1/niB2+w/ZBXw==",
+    "Kanbersky.HealthChecks/1.2.0": {
+      "sha512": "PrEe6nX65yweHcKJiPw91NmhphRTDPSr76l6MKJXEpeTPtnWCRdDf31kzrDhSxNnaLB8aBCbP8fob+wnCaoyaw==",
       "type": "package",
-      "path": "kanbersky.healthchecks/1.1.0",
+      "path": "kanbersky.healthchecks/1.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "bin/Debug/net5.0/Kanbersky.HealthChecks.dll",
         "bin/Release/net5.0/Kanbersky.HealthChecks.dll",
-        "kanbersky.healthchecks.1.1.0.nupkg.sha512",
+        "kanbersky.healthchecks.1.2.0.nupkg.sha512",
         "kanbersky.healthchecks.nuspec",
         "lib/net5.0/Kanbersky.HealthChecks.dll"
       ]
@@ -9114,8 +9115,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Kanbersky.HC.Catalog.Services >= 1.0.0",
-      "Kanbersky.HC.Core >= 1.0.0",
-      "Kanbersky.HealthChecks >= 1.1.0"
+      "Kanbersky.HC.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9163,12 +9163,6 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
-        "dependencies": {
-          "Kanbersky.HealthChecks": {
-            "target": "Package",
-            "version": "[1.1.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

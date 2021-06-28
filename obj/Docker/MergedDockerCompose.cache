@@ -99,7 +99,7 @@ services:
       ElasticsearchSettings:Url: http://elasticsearch:9200
     image: kanberskyhcgatewayapi
     ports:
-    - published: 8010
+    - published: 8020
       target: 80
   kanbersky.hc.healthstatus:
     build:

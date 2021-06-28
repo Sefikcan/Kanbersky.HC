@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[8.1.2, )"
             },
+            "Kanbersky.HealthChecks": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
             "Mapster": {
               "target": "Package",
               "version": "[7.2.0, )"
@@ -169,12 +173,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Kanbersky.HealthChecks": {
-              "target": "Package",
-              "version": "[1.1.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

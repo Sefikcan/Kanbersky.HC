@@ -11,19 +11,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_kanbersky.hc.basket.api$
     volumes:
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api:/app
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_kanbersky.hc.basket.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_kanbersky.hc.basket.api$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -37,19 +37,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_kanbersky.hc.bff.api$
     volumes:
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\BFF\Kanbersky.HC.BFF.Api:/app
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_kanbersky.hc.bff.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_kanbersky.hc.bff.api$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -64,19 +64,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_kanbersky.hc.catalog.api$
     volumes:
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Catalog\Kanbersky.HC.Catalog.Api:/app
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_kanbersky.hc.catalog.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_kanbersky.hc.catalog.api$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -91,19 +91,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_kanbersky.hc.gateway.api$
     volumes:
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Gateway\Kanbersky.HC.Gateway.Api:/app
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_kanbersky.hc.gateway.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_kanbersky.hc.gateway.api$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -118,19 +118,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_kanbersky.hc.healthstatus$
     volumes:
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\WebUI\Kanbersky.HC.HealthStatus:/app
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_kanbersky.hc.healthstatus$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_kanbersky.hc.healthstatus$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -145,19 +145,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_kanbersky.hc.ordering.api$
     volumes:
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Ordering\Kanbersky.HC.Ordering.Api:/app
       - D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC:/src
       - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\User\.nuget\packages\:/root/.nuget/packages:ro
+#$nuget_volume_mapping_kanbersky.hc.ordering.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_kanbersky.hc.ordering.api$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true

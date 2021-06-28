@@ -506,7 +506,7 @@
           "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
-      "Kanbersky.HealthChecks/1.1.0": {
+      "Kanbersky.HealthChecks/1.2.0": {
         "dependencies": {
           "AspNetCore.HealthChecks.Elasticsearch": "5.0.1",
           "AspNetCore.HealthChecks.MongoDb": "5.0.1",
@@ -2373,8 +2373,7 @@
       },
       "Kanbersky.HC.Basket.Infrastructure/1.0.0": {
         "dependencies": {
-          "Kanbersky.HC.Core": "1.0.0",
-          "Kanbersky.HealthChecks": "1.1.0"
+          "Kanbersky.HC.Core": "1.0.0"
         },
         "runtime": {
           "Kanbersky.HC.Basket.Infrastructure.dll": {}
@@ -2402,6 +2401,7 @@
           "AspNetCore.HealthChecks.UI.Client": "5.0.1",
           "AutoMapper": "10.1.1",
           "FluentValidation": "8.1.2",
+          "Kanbersky.HealthChecks": "1.2.0",
           "Mapster": "7.2.0",
           "MediatR": "9.0.0",
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
@@ -4196,12 +4196,12 @@
       "path": "fluentvalidation/8.1.2",
       "hashPath": "fluentvalidation.8.1.2.nupkg.sha512"
     },
-    "Kanbersky.HealthChecks/1.1.0": {
+    "Kanbersky.HealthChecks/1.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-u7AiGvJ5oBNu/iSpPs56ThOOX5Ax4VjW/i3atlOc9LJoZlikmPjgGZN6jdK4H5/X5NZ9atFAx1/niB2+w/ZBXw==",
-      "path": "kanbersky.healthchecks/1.1.0",
-      "hashPath": "kanbersky.healthchecks.1.1.0.nupkg.sha512"
+      "sha512": "sha512-PrEe6nX65yweHcKJiPw91NmhphRTDPSr76l6MKJXEpeTPtnWCRdDf31kzrDhSxNnaLB8aBCbP8fob+wnCaoyaw==",
+      "path": "kanbersky.healthchecks/1.2.0",
+      "hashPath": "kanbersky.healthchecks.1.2.0.nupkg.sha512"
     },
     "Mapster/7.2.0": {
       "type": "package",
