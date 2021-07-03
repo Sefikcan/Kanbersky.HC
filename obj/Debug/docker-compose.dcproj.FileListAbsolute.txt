@@ -79,7 +79,6 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Elasticsearch.Net.dl
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Serilog.Formatting.Elasticsearch.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Serilog.Sinks.File.dll
-D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\StackExchange.Redis.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\MongoDB.Libmongocrypt.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\bin\Debug\DnsClient.dll
