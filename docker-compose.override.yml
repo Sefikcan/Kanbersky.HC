@@ -45,6 +45,19 @@ services:
     ports:
       - "5601:5601"
 
+  consul:
+    container_name: consul
+    restart: always
+    networks:
+      - consul-network
+    ports:
+      - '8300:8300'
+      - '8301:8301'
+      - '8301:8301/udp'
+      - '8500:8500'
+      - '8600:8600'
+      - '8600:8600/udp'
+
   portainer:
     container_name: portainer
     restart: always
@@ -61,6 +74,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - "CacheSettings:ConnectionString=basketdb:6379"
       - "ElasticsearchSettings:Url=http://elasticsearch:9200"
+      - "ConsulSettings:Url=http://consul:8500"
     ports:
       - "8001:80"
     depends_on:

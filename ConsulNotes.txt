@@ -1,0 +1,10 @@
+* .Net Core için Winton.Extensions.Configuration.Consul paketini nuget'ten eklemelisin.
+* Docker compose ile varsayýlan olarak 8500 portunda çalýþýr.
+* Ýsimlendirme örneði: Proje_Ýsmi/Config.ismi.config_uzantisi
+
+* Consul ile aþaðýdaki iþlemleri gerçekleþtirebiliriz.
+  - Service Discovery
+  - Secure Service Communication
+  - Multi datacenter
+  - Key-value store
+  - Health-check iþlemleri

@@ -1,3 +1,4 @@
+using Kanbersky.HC.Core.Helpers;
 using Kanbersky.HC.Core.Logging.Concrete.Serilog;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
@@ -26,6 +27,7 @@ namespace Kanbersky.HC.Basket.Api
         /// <returns></returns>
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration(ConsulHelper.Configure)
                 .UseSerilog(SerilogHelper.Configure)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

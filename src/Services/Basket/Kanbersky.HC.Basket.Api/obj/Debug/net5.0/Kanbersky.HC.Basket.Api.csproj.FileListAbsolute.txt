@@ -149,3 +149,7 @@ D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Consul.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\Winton.Extensions.Configuration.Consul.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\runtimes\unix\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.HC\src\Services\Basket\Kanbersky.HC.Basket.Api\bin\Debug\net5.0\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll

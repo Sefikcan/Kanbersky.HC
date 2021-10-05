@@ -260,6 +260,16 @@
             <param name="data"></param>
             <returns></returns>
         </member>
+        <member name="T:Kanbersky.HC.Core.Helpers.ConsulHelper">
+            <summary>
+            Consul Helper
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Helpers.ConsulHelper.Configure">
+            <summary>
+            Configure Consul Operation
+            </summary>
+        </member>
         <member name="T:Kanbersky.HC.Core.Logging.Concrete.Serilog.SerilogExtensions">
             <summary>
             
@@ -736,6 +746,16 @@
         <member name="P:Kanbersky.HC.Core.Settings.Concrete.CircuitBreaker.CircuitBreakerSettings.RetryCount">
             <summary>
             
+            </summary>
+        </member>
+        <member name="T:Kanbersky.HC.Core.Settings.Concrete.Consul.ConsulSettings">
+            <summary>
+            Consul Settings
+            </summary>
+        </member>
+        <member name="P:Kanbersky.HC.Core.Settings.Concrete.Consul.ConsulSettings.Url">
+            <summary>
+            Consul Uri
             </summary>
         </member>
         <member name="T:Kanbersky.HC.Core.Settings.Concrete.Databases.OrderDbSettings">

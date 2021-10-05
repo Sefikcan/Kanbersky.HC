@@ -9,11 +9,12 @@
             
             </summary>
         </member>
-        <member name="M:Kanbersky.HC.Basket.Api.Controllers.BasketsController.#ctor(MediatR.IMediator)">
+        <member name="M:Kanbersky.HC.Basket.Api.Controllers.BasketsController.#ctor(MediatR.IMediator,Microsoft.Extensions.Configuration.IConfiguration)">
             <summary>
             ctor
             </summary>
             <param name="mediator"></param>
+            <param name="conf"></param>
         </member>
         <member name="M:Kanbersky.HC.Basket.Api.Controllers.BasketsController.GetBasketByUserName(System.String)">
             <summary>
@@ -27,6 +28,13 @@
             Add Basket
             </summary>
             <param name="createShoppingCartRequestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kanbersky.HC.Basket.Api.Controllers.BasketsController.GetAppSettingsValue(System.String)">
+            <summary>
+            Get AppSettings Value in Consul (Test Action!!!)
+            </summary>
+            <param name="key"></param>
             <returns></returns>
         </member>
         <member name="T:Kanbersky.HC.Basket.Api.Program">

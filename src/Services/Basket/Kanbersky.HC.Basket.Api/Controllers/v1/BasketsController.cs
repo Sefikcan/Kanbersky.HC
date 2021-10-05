@@ -1,10 +1,12 @@
 ﻿using Kanbersky.HC.Basket.Services.Commands;
 using Kanbersky.HC.Basket.Services.DTO.Request;
 using Kanbersky.HC.Basket.Services.DTO.Response;
+using Kanbersky.HC.Basket.Services.DTO.Response.v1;
 using Kanbersky.HC.Basket.Services.Queries;
 using Kanbersky.HC.Core.Results.ApiResponses.Concrete;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -18,14 +20,18 @@ namespace Kanbersky.HC.Basket.Api.Controllers
     public class BasketsController : KanberskyControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly IConfiguration _conf;
 
         /// <summary>
         /// ctor
         /// </summary>
         /// <param name="mediator"></param>
-        public BasketsController(IMediator mediator)
+        /// <param name="conf"></param>
+        public BasketsController(IMediator mediator,
+            IConfiguration conf)
         {
             _mediator = mediator;
+            _conf = conf;
         }
 
         /// <summary>
@@ -54,6 +60,19 @@ namespace Kanbersky.HC.Basket.Api.Controllers
         {
             var response = await _mediator.Send(new CreateBasketCommand(createShoppingCartRequestModel));
             return ApiCreated(response);
+        }
+
+        /// <summary>
+        /// Get AppSettings Value in Consul (Test Action!!!)
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("config-value")]
+        public ActionResult<string> GetAppSettingsValue([FromQuery] string key)
+        {
+            var resp = _conf[key];
+            return ApiOk(new BasketConfigResponseModel { Data = resp });
         }
     }
 }

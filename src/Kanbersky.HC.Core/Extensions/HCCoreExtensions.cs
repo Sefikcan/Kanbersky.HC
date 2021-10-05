@@ -1,6 +1,7 @@
 ﻿using Kanbersky.HC.Core.Mappings.Abstract;
 using Kanbersky.HC.Core.Mappings.Concrete.Mapster;
 using Kanbersky.HC.Core.Middlewares;
+using Kanbersky.HC.Core.Settings.Concrete.Consul;
 using Kanbersky.HC.Core.Settings.Concrete.Swagger;
 using Kanbersky.HealthChecks.Extensions;
 using Microsoft.AspNetCore.Builder;
@@ -37,6 +38,10 @@ namespace Kanbersky.HC.Core.Extensions
             SwaggerSettings swaggerSettings = new SwaggerSettings();
             configuration.GetSection(nameof(SwaggerSettings)).Bind(swaggerSettings);
             services.AddSingleton(swaggerSettings);
+
+            ConsulSettings consulSettings = new ConsulSettings();
+            configuration.GetSection(nameof(ConsulSettings)).Bind(consulSettings);
+            services.AddSingleton(consulSettings);
 
             services.AddApiVersioning(cfg =>
             {

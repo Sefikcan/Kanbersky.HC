@@ -39,6 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kanbersky.HC.Ordering.Servi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{ECD1D74A-3892-44B1-A921-DB569D17C5AE}"
 	ProjectSection(SolutionItems) = preProject
+		ConsulNotes.txt = ConsulNotes.txt
 		PortainerNotlar.txt = PortainerNotlar.txt
 		PublicNotes.txt = PublicNotes.txt
 	EndProjectSection
